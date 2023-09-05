@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier src --check",
+    "prettier:fix": "npm run prettier -- --write"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
