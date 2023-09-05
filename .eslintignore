@@ -1,0 +1,8 @@
+.*.js
+.*.jsx
+*.config.js
+node_modules
+build
+.next
+
+

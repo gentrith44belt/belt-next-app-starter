@@ -1,0 +1,9 @@
+.env
+build
+.vscode
+dist
+.github
+*.ejs
+node_modules
+.next
+
