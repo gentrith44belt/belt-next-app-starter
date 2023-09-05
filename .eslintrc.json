@@ -9,7 +9,7 @@
     "no-empty-function": "off",
     "no-unused-vars": "off",
     "no-use-before-define": "off",
-    "no-console": "warn",
+    "no-console": "error",
     "@typescript-eslint/no-shadow": ["error"],
     "@typescript-eslint/no-empty-function": "error",
     "@typescript-eslint/no-unused-vars": "error",

@@ -1,9 +1,8 @@
-.env
-build
-.vscode
-dist
-.github
-*.ejs
-node_modules
 .next
-
+.cache
+package-lock.json
+public
+node_modules
+next-env.d.ts
+next.config.ts
+yarn.lock
