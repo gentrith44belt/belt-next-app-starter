@@ -1,18 +1,16 @@
 import Link from "next/link";
 import { Button, Input } from "@src/components";
 
-interface LoginProps {}
-
-const Login = (props: LoginProps) => {
+const Login = () => {
   return (
     <div>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div>
         <Link href="/" style={{ textDecoration: "none", marginRight: 10 }}>
           <span>&#8592;</span> Go Back
         </Link>
-
-        <h3>Login</h3>
       </div>
+
+      <hr />
 
       <div>
         <form>
