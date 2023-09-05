@@ -24,10 +24,10 @@ const Page = () => {
         </Link>
       </div>
 
-      <Grid container mt={5}>
+      <Grid container columnSpacing={2} rowSpacing={2} mt={4}>
         {posts.map((post) => {
           return (
-            <Grid xs={4} key={post.id} mr={2}>
+            <Grid item xs={4} key={post.id}>
               <PostCard id={post.id} heading={post.text} />
             </Grid>
           );
