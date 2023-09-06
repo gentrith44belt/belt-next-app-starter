@@ -7,6 +7,6 @@ interface Props extends HTMLProps<HTMLInputElement> {}
  * @param props
  * @constructor
  */
-export const Input = (props: Props) => {
+export function Input(props: Props) {
   return <input {...props} />;
-};
+}

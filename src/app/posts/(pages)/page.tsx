@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Grid } from "@mui/material";
 import PostCard from "@src/app/posts/components/post-card";
@@ -15,7 +13,7 @@ const posts = [
   },
 ];
 
-const Page = () => {
+export default function Posts() {
   return (
     <div>
       <div>
@@ -35,6 +33,4 @@ const Page = () => {
       </Grid>
     </div>
   );
-};
-
-export default Page;
+}

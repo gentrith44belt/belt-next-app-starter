@@ -9,10 +9,10 @@ interface Props extends HTMLProps<HTMLButtonElement> {}
  * @param rest
  * @constructor
  */
-export const Button = ({ children, type, ...rest }: Props) => {
+export function Button({ children, type, ...rest }: Props) {
   return (
     <button type={(type as HTMLButtonElement["type"]) ?? "button"} {...rest}>
       {children}
     </button>
   );
-};
+}

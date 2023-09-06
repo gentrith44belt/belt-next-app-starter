@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button, Input } from "@src/components";
 
-const Login = () => {
+export default function Login() {
   return (
     <div>
       <div>
@@ -25,6 +25,4 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
-export default Login;
+}

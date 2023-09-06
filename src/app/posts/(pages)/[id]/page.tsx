@@ -9,10 +9,8 @@ interface PageProps {
   params: { id: string };
 }
 
-const Page = async ({ params }: PageProps) => {
+export default async function PostDetails({ params }: PageProps) {
   const data = await getData(params.id);
 
   return <PostDetailsContainer post={data} />;
-};
-
-export default Page;
+}
