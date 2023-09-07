@@ -1,16 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { pokemonApi } from "@src/lib/redux/api";
 import { counterSlice } from "@src/lib/redux/counterSlice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import { baseApi } from "@src/lib/api/baseApi";
 
 export const store = configureStore({
   reducer: {
     [counterSlice.name]: counterSlice.reducer,
-    [pokemonApi.reducerPath]: pokemonApi.reducer,
+    [baseApi.reducerPath]: baseApi.reducer,
   },
   // and other useful features of `rtk-query`.
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(pokemonApi.middleware),
+    getDefaultMiddleware().concat(baseApi.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

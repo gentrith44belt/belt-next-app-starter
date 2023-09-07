@@ -10,7 +10,8 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier src --check",
     "prettier:fix": "npm run prettier -- --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:api": "yarn rtk-query-codegen-openapi src/lib/api/openapi-config.ts"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
@@ -22,6 +23,7 @@
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "axios": "^1.5.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
@@ -31,11 +33,13 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@rtk-query/codegen-openapi": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.0",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1"
   }
 }
