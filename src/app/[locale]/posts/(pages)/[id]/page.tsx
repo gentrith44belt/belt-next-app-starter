@@ -1,4 +1,4 @@
-import PostDetailsContainer from "@src/app/posts/containers/post-details-container";
+import PostDetailsContainer from "@src/app/[locale]/posts/containers/post-details-container";
 
 async function getData(id: string) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);

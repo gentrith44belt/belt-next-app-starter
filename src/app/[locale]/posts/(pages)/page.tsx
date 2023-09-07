@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Grid } from "@mui/material";
-import PostCard from "@src/app/posts/components/post-card";
+import PostCard from "@src/app/[locale]/posts/components/post-card";
 
 const posts = [
   {

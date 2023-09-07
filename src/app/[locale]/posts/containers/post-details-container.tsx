@@ -15,6 +15,7 @@ interface Props {
 
 const PostDetailsContainer = ({ post }: Props) => {
   const routerNavigation = useRouter();
+
   return (
     <div>
       <div style={{ display: "flex", alignItems: "center" }}>
