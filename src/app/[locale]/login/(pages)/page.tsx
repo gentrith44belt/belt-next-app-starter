@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button, Input } from "@src/components";
+import LoginForm from "@src/app/[locale]/login/components/login-form";
 
 export default function Login() {
   return (
@@ -12,17 +12,7 @@ export default function Login() {
 
       <hr />
 
-      <div>
-        <form>
-          <Input placeholder="Email" />
-          <br />
-          <br />
-          <Input placeholder="Password" />
-          <br />
-          <br />
-          <Button>Login</Button>
-        </form>
-      </div>
+      <LoginForm />
     </div>
   );
 }
