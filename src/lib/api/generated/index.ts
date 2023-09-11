@@ -1,4 +1,4 @@
-import { baseApi as api } from "../baseApi";
+import { baseApi as api } from "../base-api";
 const injectedRtkApi = api.injectEndpoints({
   endpoints: (build) => ({
     getById: build.query<GetByIdApiResponse, GetByIdApiArg>({

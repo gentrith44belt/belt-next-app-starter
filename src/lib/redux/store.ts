@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer, { counterSlice } from "@src/lib/redux/counterSlice";
+import counterReducer, { counterSlice } from "@src/lib/redux/counter-slice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import { baseApi } from "@src/lib/api/baseApi";
+import { baseApi } from "@src/lib/api/base-api";
 import {
   FLUSH,
   PAUSE,

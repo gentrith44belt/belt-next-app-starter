@@ -6,6 +6,7 @@
 - [Scripts](#scripts)
 - [Build and deploy](#build-and-deploy)
 - [Git Workflow](#git-workflow)
+- [Code and naming conventions](code-conventions.md)
 - [Project structure template](#project-structure-template)
 - Shared functionalities
   - [API queries and mutations generation](#api-queries-and-mutations-generation)
@@ -55,6 +56,9 @@ After you finish your task, create a PR `dev <- your-branch`
 
 For more details [read here](https://beltio.atlassian.net/wiki/spaces/ENGR/pages/19431435/Code+Branching+and+Merging+Strategy).
 
+
+# Code and naming conventions
+[See here!](../docs/code-conventions.md)
 
 # Project structure template
 
@@ -113,4 +117,4 @@ To do that you just need to run `yarn generate:api` and it will generate the dat
 
 To manage forms we use [react-hook-form](https://www.react-hook-form.com/). When you are creating new forms, create a
 custom hook for that specific form and store it inside `hooks/form-hooks` inside the module that you are working on.
-Make sure to add validations using existing [validation functions](../src/lib/utils/yupValidations.ts).
+Make sure to add validations using existing [validation functions](../src/lib/utils/yup-validations.ts).

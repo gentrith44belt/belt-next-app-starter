@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import StoreProvider from "@src/lib/redux/StoreProvider";
-import ThemeRegistry from "@src/lib/theme/ThemeRegistry";
+import StoreProvider from "@src/lib/redux/store-provider";
+import ThemeRegistry from "@src/lib/theme/theme-registry";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import {
   AppBar,

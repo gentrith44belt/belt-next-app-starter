@@ -1,7 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import { email, text } from "@src/lib/utils/yupValidations";
+import { email, text } from "@src/lib/utils/yup-validations";
 
 export interface LoginFormValues {
   email: string;
