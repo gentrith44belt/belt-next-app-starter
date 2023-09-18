@@ -1,22 +1,33 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import counterReducer, { counterSlice } from "@src/lib/redux/counter-slice";
+
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { baseApi } from "@src/lib/api/base-api";
 import {
   FLUSH,
   PAUSE,
   PERSIST,
+  persistReducer,
   persistStore,
   PURGE,
   REGISTER,
   REHYDRATE,
 } from "redux-persist";
+import storage from "@src/lib/redux/utils/storage";
+
+const persistConfig = {
+  key: "primary",
+  storage,
+  whitelist: [],
+};
+
+const rootReducer = combineReducers({
+  [counterSlice.name]: counterReducer,
+  [baseApi.reducerPath]: baseApi.reducer,
+});
 
 export const store = configureStore({
-  reducer: {
-    [counterSlice.name]: counterReducer,
-    [baseApi.reducerPath]: baseApi.reducer,
-  },
+  reducer: persistReducer(persistConfig, rootReducer),
   // and other useful features of `rtk-query`.
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
